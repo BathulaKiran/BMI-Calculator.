@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculate your BMI</h1>
+        <nav>
+            <a href="#about">About Us</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <form id="bmiForm">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+            
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+            
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>We provide a simple tool to help you calculate your Body Mass Index (BMI), an indicator of body fat based on your height and weight. BMI is commonly used to categorize individuals into various weight categories that can help assess potential health risks.</p>
+        <p>BMI Categories:</p>
+        <ul>
+            <li>Underweight: BMI less than 18.5</li>
+            <li>Normal weight: BMI between 18.5 and 24.9</li>
+            <li>Overweight: BMI between 25 and 29.9</li>
+            <li>Obese: BMI 30 or greater</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>If you have any questions, feel free to reach out to us at <a href="bathulakiran432@gmail.com">bathulakiran432@gmail.com</a>.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
